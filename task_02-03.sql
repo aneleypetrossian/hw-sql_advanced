@@ -22,7 +22,6 @@ WHERE
     OR title ILIKE '% мой' 
     OR title ILIKE '% мой %' 
     OR title ILIKE 'мой'
-    -- Проверки для слова "ту"  
     OR title ILIKE 'ту %'
     OR title ILIKE '% ту'
     OR title ILIKE '% ту %'
