@@ -17,7 +17,16 @@ WHERE name NOT LIKE '% %' AND name NOT LIKE '%-%';
 
 SELECT title
 FROM Tracks
-WHERE LOWER(title) LIKE '%мой%' OR LOWER(title) LIKE '%ту%';
+WHERE 
+    title ILIKE 'мой %' 
+    OR title ILIKE '% мой' 
+    OR title ILIKE '% мой %' 
+    OR title ILIKE 'мой'
+    -- Проверки для слова "ту"  
+    OR title ILIKE 'ту %'
+    OR title ILIKE '% ту'
+    OR title ILIKE '% ту %'
+    OR title ILIKE 'ту';
 
 SELECT g.name, COUNT(ag.artist_id)
 FROM Genres g

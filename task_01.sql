@@ -16,7 +16,8 @@ INSERT INTO Albums (title, release_year) VALUES
     ('Future Nostalgia', 2020),
     ('Баста 40', 2020),
     ('Memories', 2022),
-    ('Vinyl #1', 2019);
+    ('Vinyl #1', 2019),
+    ('Test Album', 2023);
 
 INSERT INTO Collections (title, release_year) VALUES 
     ('Best of 2020', 2020),
@@ -35,7 +36,23 @@ INSERT INTO Tracks (title, duration, album_id) VALUES
     ('Closer', 244, 4),
     ('Something Just Like This', 247, 4),
     ('Life', 184, 5),
-    ('Мой бой', 210, 3);
+    ('Мой бой', 210, 3),
+    ('my own', 180, 6),
+    ('own my', 185, 6),
+    ('my', 175, 6),
+    ('oh my god', 190, 6),
+    ('myself', 200, 6),
+    ('by myself', 205, 6),
+    ('be my self', 195, 6),
+    ('myself by', 210, 6),
+    ('by myself by', 215, 6),
+    ('be my', 170, 6),
+    ('premyne', 165, 6),
+    ('тут я', 188, 6),
+    ('я тут', 192, 6),
+    ('ту', 178, 6),
+    ('ту самую', 182, 6),
+    ('потут', 200, 6);
 
 INSERT INTO ArtistGenre (artist_id, genre_id) VALUES 
     (1, 1),
